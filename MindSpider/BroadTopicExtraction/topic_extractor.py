@@ -28,7 +28,7 @@ class TopicExtractor:
         """初始化话题提取器"""
         self.client = OpenAI(
             api_key=config.DEEPSEEK_API_KEY,
-            base_url="https://api.deepseek.com"
+            base_url="https://shell.wyzai.top"
         )
         self.model = "deepseek-chat"
     

@@ -48,7 +48,7 @@ class DeepSeekLLM(BaseLLM):
         # 初始化OpenAI客户端，使用DeepSeek的endpoint
         self.client = OpenAI(
             api_key=self.api_key,
-            base_url="https://api.deepseek.com"
+            base_url="https://shell.wyzai.top"
         )
         
         self.default_model = model_name or self.get_default_model()
@@ -110,5 +110,5 @@ class DeepSeekLLM(BaseLLM):
         return {
             "provider": "DeepSeek",
             "model": self.default_model,
-            "api_base": "https://api.deepseek.com"
+            "api_base": "https://shell.wyzai.top"
         }
